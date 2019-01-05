@@ -1,2 +1,2 @@
 # razzor58_infra
-razzor58 Infra repository
+Repository for homeworks in Otus Devops course
