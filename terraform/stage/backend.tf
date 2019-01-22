@@ -1,5 +1,5 @@
 terraform {
-  backend "gcs-stage" {
+  backend "gcs" {
     bucket =  "sb-razzor58-stage"
     prefix = "stage"
   }
