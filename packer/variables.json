@@ -2,10 +2,9 @@
   "project_id": "infra-226315",
   "source_image_family": "ubuntu-1604-lts",
   "machine_type": "f1-micro",
-  "tags": "puma-server,http-server",
+  "tags": ["puma-server","http-server"],
   "disk_type": "pd-standard",
   "disk_size": "10",
   "image_description": "VM for reddit web-app",
   "network": "default"
 }
-
