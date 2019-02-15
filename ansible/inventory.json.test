@@ -1,0 +1,377 @@
+{
+    "_meta": {
+        "hostvars": {
+            "10.132.0.3": {
+                "canIpForward": false, 
+                "cpuPlatform": "Intel Sandy Bridge", 
+                "creationTimestamp": "2018-12-24T08:40:34.324-08:00", 
+                "deletionProtection": false, 
+                "description": "", 
+                "disks": [
+                    {
+                        "autoDelete": true, 
+                        "boot": true, 
+                        "deviceName": "internalhost1", 
+                        "guestOsFeatures": [
+                            {
+                                "type": "SECURE_BOOT"
+                            }, 
+                            {
+                                "type": "VIRTIO_SCSI_MULTIQUEUE"
+                            }, 
+                            {
+                                "type": "UEFI_COMPATIBLE"
+                            }
+                        ], 
+                        "index": 0, 
+                        "interface": "SCSI", 
+                        "kind": "compute#attachedDisk", 
+                        "licenses": [
+                            "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1804-lts"
+                        ], 
+                        "mode": "READ_WRITE", 
+                        "source": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/disks/internalhost1", 
+                        "type": "PERSISTENT"
+                    }
+                ], 
+                "id": "2509275275545326318", 
+                "kind": "compute#instance", 
+                "labelFingerprint": "42WmSpB8rSM=", 
+                "machineType": "f1-micro", 
+                "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/machineTypes/f1-micro", 
+                "metadata": {
+                    "fingerprint": "uFhLFHAdi9M=", 
+                    "kind": "compute#metadata"
+                }, 
+                "name": "internalhost1", 
+                "networkInterfaces": [
+                    {
+                        "fingerprint": "tAFhMsCrCSc=", 
+                        "kind": "compute#networkInterface", 
+                        "name": "nic0", 
+                        "network": {
+                            "name": "default", 
+                            "region": "global", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/global/networks/default"
+                        }, 
+                        "networkIP": "10.132.0.3", 
+                        "subnetwork": {
+                            "name": "default", 
+                            "region": "europe-west1", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/regions/europe-west1/subnetworks/default"
+                        }
+                    }
+                ], 
+                "project": "infra-226315", 
+                "scheduling": {
+                    "automaticRestart": true, 
+                    "onHostMaintenance": "MIGRATE", 
+                    "preemptible": false
+                }, 
+                "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/instances/internalhost1", 
+                "serviceAccounts": [
+                    {
+                        "email": "722899341161-compute@developer.gserviceaccount.com", 
+                        "scopes": [
+                            "https://www.googleapis.com/auth/devstorage.read_only", 
+                            "https://www.googleapis.com/auth/logging.write", 
+                            "https://www.googleapis.com/auth/monitoring.write", 
+                            "https://www.googleapis.com/auth/servicecontrol", 
+                            "https://www.googleapis.com/auth/service.management.readonly", 
+                            "https://www.googleapis.com/auth/trace.append"
+                        ]
+                    }
+                ], 
+                "startRestricted": false, 
+                "status": "RUNNING", 
+                "tags": {
+                    "fingerprint": "42WmSpB8rSM="
+                }, 
+                "zone": "europe-west1-b", 
+                "zone_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b"
+            }, 
+            "35.205.134.217": {
+                "cpuPlatform": "Intel Sandy Bridge", 
+                "creationTimestamp": "2019-02-10T05:32:10.676-08:00", 
+                "deletionProtection": false, 
+                "disks": [
+                    {
+                        "autoDelete": true, 
+                        "boot": true, 
+                        "deviceName": "persistent-disk-0", 
+                        "guestOsFeatures": [
+                            {
+                                "type": "VIRTIO_SCSI_MULTIQUEUE"
+                            }
+                        ], 
+                        "index": 0, 
+                        "interface": "SCSI", 
+                        "kind": "compute#attachedDisk", 
+                        "licenses": [
+                            "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+                        ], 
+                        "mode": "READ_WRITE", 
+                        "source": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/disks/reddit-app", 
+                        "type": "PERSISTENT"
+                    }
+                ], 
+                "id": "8407431198880405814", 
+                "kind": "compute#instance", 
+                "labelFingerprint": "42WmSpB8rSM=", 
+                "machineType": "g1-small", 
+                "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/machineTypes/g1-small", 
+                "metadata": {
+                    "fingerprint": "eZzoPVVZjuI=", 
+                    "items": [
+                        {
+                            "key": "ssh-keys", 
+                            "value": "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC88RqIaq4MTl4eEDL5a1uFMafjL7NhPZCeTN/i/ZnCdYErrIVfxiiV8FbfxVZUyHDg2nZAdb8gcGnu09tPGFyULrf25BazzEp3my1SwJ2DSWt3kGmJ8UH8ZKmpgR7PBsEuFyrnHHrm5bTKD7JRiGjGKEg0CAeS9W3Sgrj/Ws/Rc3BlhJkSIIcxFnkljFLSsk9fFXAJGdXEDz3QVwgMZ/yFCvgLqhcYW6Phg3MdpBSirftL9kaOhppv5j8LwZXvAtBTI+7wktUgc3IL/Oi/esuQl9mMR3leyPnl9RQib8oHf5+fJSQW/WUoVAukSAfP/Vy3LBjzh+GKUU0B7wWea5Ad appuser\n"
+                        }
+                    ], 
+                    "kind": "compute#metadata"
+                }, 
+                "name": "reddit-app", 
+                "networkInterfaces": [
+                    {
+                        "accessConfigs": [
+                            {
+                                "kind": "compute#accessConfig", 
+                                "name": "external-nat", 
+                                "natIP": "35.205.134.217", 
+                                "networkTier": "PREMIUM", 
+                                "type": "ONE_TO_ONE_NAT"
+                            }
+                        ], 
+                        "fingerprint": "eE7Hz5IMCOc=", 
+                        "kind": "compute#networkInterface", 
+                        "name": "nic0", 
+                        "network": {
+                            "name": "default", 
+                            "region": "global", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/global/networks/default"
+                        }, 
+                        "networkIP": "10.132.0.20", 
+                        "subnetwork": {
+                            "name": "default", 
+                            "region": "europe-west1", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/regions/europe-west1/subnetworks/default"
+                        }
+                    }
+                ], 
+                "project": "infra-226315", 
+                "scheduling": {
+                    "automaticRestart": true, 
+                    "onHostMaintenance": "MIGRATE", 
+                    "preemptible": false
+                }, 
+                "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/instances/reddit-app", 
+                "startRestricted": false, 
+                "status": "RUNNING", 
+                "tags": {
+                    "fingerprint": "M-ggixIz-AU=", 
+                    "items": [
+                        "reddit-app"
+                    ]
+                }, 
+                "zone": "europe-west1-b", 
+                "zone_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b"
+            }, 
+            "35.228.0.146": {
+                "canIpForward": false, 
+                "cpuPlatform": "Intel Skylake", 
+                "creationTimestamp": "2019-01-04T06:30:16.946-08:00", 
+                "deletionProtection": false, 
+                "description": "", 
+                "disks": [
+                    {
+                        "autoDelete": true, 
+                        "boot": true, 
+                        "deviceName": "bastion", 
+                        "guestOsFeatures": [
+                            {
+                                "type": "VIRTIO_SCSI_MULTIQUEUE"
+                            }
+                        ], 
+                        "index": 0, 
+                        "interface": "SCSI", 
+                        "kind": "compute#attachedDisk", 
+                        "licenses": [
+                            "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+                        ], 
+                        "mode": "READ_WRITE", 
+                        "source": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-north1-a/disks/bastion", 
+                        "type": "PERSISTENT"
+                    }
+                ], 
+                "id": "2632408019371217687", 
+                "kind": "compute#instance", 
+                "labelFingerprint": "42WmSpB8rSM=", 
+                "machineType": "f1-micro", 
+                "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-north1-a/machineTypes/f1-micro", 
+                "metadata": {
+                    "fingerprint": "uFhLFHAdi9M=", 
+                    "kind": "compute#metadata"
+                }, 
+                "name": "bastion", 
+                "networkInterfaces": [
+                    {
+                        "accessConfigs": [
+                            {
+                                "kind": "compute#accessConfig", 
+                                "name": "External NAT", 
+                                "natIP": "35.228.0.146", 
+                                "networkTier": "PREMIUM", 
+                                "type": "ONE_TO_ONE_NAT"
+                            }
+                        ], 
+                        "fingerprint": "HIHC_x_YPvQ=", 
+                        "kind": "compute#networkInterface", 
+                        "name": "nic0", 
+                        "network": {
+                            "name": "default", 
+                            "region": "global", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/global/networks/default"
+                        }, 
+                        "networkIP": "10.166.0.2", 
+                        "subnetwork": {
+                            "name": "default", 
+                            "region": "europe-north1", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/regions/europe-north1/subnetworks/default"
+                        }
+                    }
+                ], 
+                "project": "infra-226315", 
+                "scheduling": {
+                    "automaticRestart": true, 
+                    "onHostMaintenance": "MIGRATE", 
+                    "preemptible": false
+                }, 
+                "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-north1-a/instances/bastion", 
+                "serviceAccounts": [
+                    {
+                        "email": "722899341161-compute@developer.gserviceaccount.com", 
+                        "scopes": [
+                            "https://www.googleapis.com/auth/devstorage.read_only", 
+                            "https://www.googleapis.com/auth/logging.write", 
+                            "https://www.googleapis.com/auth/monitoring.write", 
+                            "https://www.googleapis.com/auth/servicecontrol", 
+                            "https://www.googleapis.com/auth/service.management.readonly", 
+                            "https://www.googleapis.com/auth/trace.append"
+                        ]
+                    }
+                ], 
+                "startRestricted": false, 
+                "status": "RUNNING", 
+                "tags": {
+                    "fingerprint": "6H1nS7rE1GQ=", 
+                    "items": [
+                        "http-server", 
+                        "https-server", 
+                        "vpn-13414"
+                    ]
+                }, 
+                "zone": "europe-north1-a", 
+                "zone_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-north1-a"
+            }, 
+            "35.240.55.156": {
+                "cpuPlatform": "Intel Sandy Bridge", 
+                "creationTimestamp": "2019-02-10T05:31:58.141-08:00", 
+                "deletionProtection": false, 
+                "disks": [
+                    {
+                        "autoDelete": true, 
+                        "boot": true, 
+                        "deviceName": "persistent-disk-0", 
+                        "guestOsFeatures": [
+                            {
+                                "type": "VIRTIO_SCSI_MULTIQUEUE"
+                            }
+                        ], 
+                        "index": 0, 
+                        "interface": "SCSI", 
+                        "kind": "compute#attachedDisk", 
+                        "licenses": [
+                            "https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/licenses/ubuntu-1604-xenial"
+                        ], 
+                        "mode": "READ_WRITE", 
+                        "source": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/disks/reddit-db", 
+                        "type": "PERSISTENT"
+                    }
+                ], 
+                "id": "6599935379620337954", 
+                "kind": "compute#instance", 
+                "labelFingerprint": "42WmSpB8rSM=", 
+                "machineType": "g1-small", 
+                "machineType_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/machineTypes/g1-small", 
+                "metadata": {
+                    "fingerprint": "eZzoPVVZjuI=", 
+                    "items": [
+                        {
+                            "key": "ssh-keys", 
+                            "value": "appuser:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC88RqIaq4MTl4eEDL5a1uFMafjL7NhPZCeTN/i/ZnCdYErrIVfxiiV8FbfxVZUyHDg2nZAdb8gcGnu09tPGFyULrf25BazzEp3my1SwJ2DSWt3kGmJ8UH8ZKmpgR7PBsEuFyrnHHrm5bTKD7JRiGjGKEg0CAeS9W3Sgrj/Ws/Rc3BlhJkSIIcxFnkljFLSsk9fFXAJGdXEDz3QVwgMZ/yFCvgLqhcYW6Phg3MdpBSirftL9kaOhppv5j8LwZXvAtBTI+7wktUgc3IL/Oi/esuQl9mMR3leyPnl9RQib8oHf5+fJSQW/WUoVAukSAfP/Vy3LBjzh+GKUU0B7wWea5Ad appuser\n"
+                        }
+                    ], 
+                    "kind": "compute#metadata"
+                }, 
+                "name": "reddit-db", 
+                "networkInterfaces": [
+                    {
+                        "accessConfigs": [
+                            {
+                                "kind": "compute#accessConfig", 
+                                "name": "external-nat", 
+                                "natIP": "35.240.55.156", 
+                                "networkTier": "PREMIUM", 
+                                "type": "ONE_TO_ONE_NAT"
+                            }
+                        ], 
+                        "fingerprint": "uHzExTNmWFU=", 
+                        "kind": "compute#networkInterface", 
+                        "name": "nic0", 
+                        "network": {
+                            "name": "default", 
+                            "region": "global", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/global/networks/default"
+                        }, 
+                        "networkIP": "10.132.0.19", 
+                        "subnetwork": {
+                            "name": "default", 
+                            "region": "europe-west1", 
+                            "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/regions/europe-west1/subnetworks/default"
+                        }
+                    }
+                ], 
+                "project": "infra-226315", 
+                "scheduling": {
+                    "automaticRestart": true, 
+                    "onHostMaintenance": "MIGRATE", 
+                    "preemptible": false
+                }, 
+                "selfLink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b/instances/reddit-db", 
+                "startRestricted": false, 
+                "status": "RUNNING", 
+                "tags": {
+                    "fingerprint": "NQyRUqL7UTU=", 
+                    "items": [
+                        "reddit-db"
+                    ]
+                }, 
+                "zone": "europe-west1-b", 
+                "zone_selflink": "https://www.googleapis.com/compute/v1/projects/infra-226315/zones/europe-west1-b"
+            }
+        }
+    }, 
+    "all": {
+        "children": [
+            "ungrouped"
+        ]
+    }, 
+    "ungrouped": {
+        "hosts": [
+            "10.132.0.3", 
+            "35.205.134.217", 
+            "35.228.0.146", 
+            "35.240.55.156"
+        ]
+    }
+}
