@@ -1,0 +1,12 @@
+plugin: gcp_compute
+projects:
+  - infra-226315
+hostnames:
+  - name
+groups:
+  db: "'db' in name"
+  app: "'app' in name"
+filters:
+auth_kind: serviceaccount
+service_account_file: /home/ilya/projects/service_account.json
+
